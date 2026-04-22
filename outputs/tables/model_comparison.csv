@@ -1,0 +1,5 @@
+model,accuracy,error_rate,macro_f1,weighted_f1,train_accuracy,tree_depth,leaf_count
+min_samples_tuned,0.793,0.207,0.6954,0.792,0.862,13,212
+pruned_tree,0.784,0.216,0.7007,0.7848,0.8187,7,35
+max_depth_tuned,0.756,0.244,0.6569,0.7511,0.8025,5,32
+baseline,0.748,0.252,0.6306,0.7465,1.0,17,630

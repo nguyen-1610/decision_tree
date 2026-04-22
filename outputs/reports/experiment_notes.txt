@@ -1,0 +1,4 @@
+Experiment notes
+80/20 stratified train-test split
+Labels: A>=3.6, B>=3.2, C>=2.5, D>=2.0, F<2.0
+Improvements: max_depth tuning, min_samples tuning, cost-complexity pruning
