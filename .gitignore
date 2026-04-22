@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/*.executed.ipynb
+
+# Test and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local workspace state
+.tmp/
+.jupyter/
+.ipython/
+.local/
+
+# Generated outputs
+outputs/figures/*.png
+outputs/reports/*.txt
+outputs/tables/*.csv
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
