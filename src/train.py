@@ -5,7 +5,7 @@ from src.config import DATA_PATH, FIGURES_DIR, REPORTS_DIR, TABLES_DIR
 from src.data_loader import load_dataset, prepare_train_test_split
 from src.evaluate import build_summary_row, evaluate_predictions, save_text_report
 from src.features import build_model_pipeline
-from src.visualize import save_confusion_matrix_figure, save_feature_importance_figure, save_tree_figure
+from src.visualize import save_confusion_matrix_figure, save_feature_importance_figure, save_full_tree_svg, save_tree_figure
 
 
 def ensure_output_dirs() -> None:
@@ -69,6 +69,12 @@ def save_experiment_artifacts(result: dict) -> None:
         feature_names,
         FIGURES_DIR / f"{model_name}_tree.png",
         f"{model_name} decision tree",
+    )
+    save_full_tree_svg(
+        pipeline,
+        feature_names,
+        FIGURES_DIR / f"{model_name}_tree_full.svg",
+        f"{model_name} decision tree (full)",
     )
 
 

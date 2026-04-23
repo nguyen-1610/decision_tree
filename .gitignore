@@ -24,6 +24,7 @@ notebooks/*.executed.ipynb
 
 # Generated outputs
 outputs/figures/*.png
+outputs/figures/*.svg
 outputs/reports/*.txt
 outputs/tables/*.csv
 
